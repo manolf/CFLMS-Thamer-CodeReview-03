@@ -1,0 +1,343 @@
+* {
+
+  font-family: 'Roboto', sans-serif;
+
+}
+
+header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*Styling of footer and its components*/
+footer{
+	background-color: black;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#logo2{
+	align-self: flex-end;
+}
+
+#nav{
+	background-color: #960000;
+	color: white;
+}
+
+#manu{
+	align-self: center;
+}
+/******************************************/
+
+
+
+.nav ul {
+	display: flex;
+    justify-content: left;
+    list-style-type: none;
+    padding: 1vw;
+    /*align-items: flex-start; */
+}
+
+.nav li{
+	padding-right: 2vw;
+}
+
+.nav a{
+	color: white;
+    text-decoration: none;
+    font-weight: bold;
+   /*padding-right: 1.5vw;*/
+}
+
+
+
+#container2{
+	background-image: url("traffic-332857_1920.jpg");
+	background-size: cover;
+	background-color: grey;
+	display: flex;
+	justify-content: center;
+	flex-direction:  column;
+}
+
+#container2 > h1{
+	color:  white;
+}
+
+/*styling of the whole form */
+#form{
+	width: 90%;
+	background-color: lightgrey;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border-top: 1.5pt solid green;
+	border-left:  1.5pt solid grey;
+	border-right:  1.5pt solid grey;
+	align-self: center;
+	/*background-color: hsla(0, 121%, 50%, 0.1);*/
+	opacity: 0.7;
+}
+
+/*ID for aligning the clusters in 2 lines */
+#fields{
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 3vw;
+	justify-content: space-around;
+
+}
+
+label{
+	font-size: 1.6vw;
+}
+
+input{
+	width: 20vw;
+	height: 2.5vw;
+}
+
+select{
+	width: 21vw;
+	height: 3.2vw;	
+}
+
+/*cluster class for styling and align the labels and their fields*/
+.cluster{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0 2vw;
+}
+
+
+/*styling of the button and the outputfield*/
+#output{
+	/*color: #4CAF50;*/
+	color: #267024;
+	font-weight: bold;
+}
+
+#button{
+	background-color: #4CAF50;
+	border-radius: 1vw;
+	color:  white;
+	padding: 0.5vw 2vw;
+	font-size: 2vw;
+
+}
+
+#button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#line{
+	display:  inline-block;
+	background-color: white;
+	height: 3vw;
+	width:  90%;
+	border-left:  1.5pt solid grey;
+	border-right:  1.5pt solid grey;
+	border-bottom:  1.5pt solid grey;
+}
+
+#ad{
+	text-align: center;
+	padding-bottom: 1vw;
+	background-color: lightgrey;
+	color:  dark-grey;
+
+}
+
+
+#container3{
+	padding:  6vw 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around
+}
+
+.para{
+	border-top:  1.5pt solid black ;
+	border-bottom: 1pt solid grey;
+}
+
+.blue{
+	color: #002670;
+}
+
+
+.para li{
+	list-style-type: none;	
+} 
+
+.bold{
+	font-weight: bold;
+}
+
+
+/*actions to wrap the p and grey*/
+.lite{
+	color: grey;
+}
+
+.upper{
+	text
+}
+
+
+/*Styling of team.html*/
+
+#wrapper{
+	display: flex;
+	justify-content: center;
+	width:  90%;
+	background-color: lightgrey;
+	flex-direction: column;
+}
+
+#welcome{
+	text-align: center;
+	color: #330000;
+}
+
+
+.foto{
+	max-width: 500px;
+	max-height: 333px ;
+	overflow:  hidden;
+
+}
+
+
+
+#team{
+	display: flex;
+	width: 90%;
+	overflow:  hidden;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+.persona{
+	width: 500px;
+	text-align: center;
+	background-color: #853A3F;
+	margin: 5% 0;
+	border-radius: 1vw;
+
+	/*properties for hover*/
+	position: relative;
+	cursor: pointer;
+}
+
+
+/*playing around with on:hover*/
+.content {
+	opacity: 0;
+	font-size: 40px;
+	position: absolute;
+	top: 0;
+	left: 10%;
+	color: #330000;
+	width: 400px;
+	height: 300px;
+	-webkit-transition: all 400ms ease-out;
+	-moz-transition: all 400ms ease-out;
+	-o-transition: all 400ms ease-out;
+	-ms-transition: all 400ms ease-out;
+	transition: all 400ms ease-out;
+	text-align: left;
+	}
+
+.persona .content:hover {
+	opacity: 1;
+	}
+
+.persona .content .text {
+	height: 0;
+	opacity: 1;
+	transition-delay: 0s;
+	transition-duration: 0.4s;
+	}
+
+.persona .content:hover .text {
+	opacity: 1;
+	transform: translateY(250px);
+	-webkit-transform: translateY(250px);
+}
+ /*end of playing around*/
+
+
+
+ @media screen and (max-width: 480px) {
+  /*following adaptions for mobile friendlyness
+
+  index.html:
+  1) no display of the banner
+  2) wrapping of container3
+  3) rearrangement of footer: logo to center;
+  4) Deletion of border buttom of .para
+  
+  team.html:
+  5)resizing pictures of .foto;
+  6)changing content.parameter for :hover 
+  */
+  
+  /* just for testing
+  body {
+    background-color: lime; 
+	}
+	*/
+
+ #banner {
+    display: none; }
+
+#fields{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+
+#container3{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#logo2{
+	align-self: center;
+}
+
+.para{
+	border-bottom: none;
+}
+
+.foto{
+	width: 250px;
+	height: 168px ;
+	overflow:  hidden;
+
+}
+
+.content {
+	font-size: 10px;
+	font-weight: bold;
+	color:#330000 ;
+	top: 0;
+	left: 40px;
+	color: black;
+	width: 400px;
+	height: 300px;
+	}
+
+ }
+
